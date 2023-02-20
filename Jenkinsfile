@@ -11,6 +11,12 @@ node {
   
        app = docker.build("khushboosingh93/test")
     }
+     stage('environment variable') {
+  
+
+       sh 'echo $WORKSPACE'
+    }
+
 
     stage('Test image') {
   
