@@ -1,5 +1,8 @@
 node {
     def app
+     parameters {
+        string(name: 'JENKINS_WORKSPACE', defaultValue: workspace, description: 'Jenkins WORKSPACE')
+    }
 
     stage('Clone repository') {
       
